@@ -1,0 +1,26 @@
+# Temporary files
+~$*
+*.tmp
+extracted_text.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/
+
+# Original source files (not for web deployment)
+Articulo_13_02_26.docx
+esquema de piloto.py
+grafico_resumen_TAP-IAP.png

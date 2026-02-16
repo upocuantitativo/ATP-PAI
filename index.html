@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATP-PAI | Accessible Tourism Powered by Personalized AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-icon"><i class="fas fa-universal-access"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">ATP-PAI</span>
+                    <span class="logo-subtitle">Accessible Tourism Powered by Personalized AI</span>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="#about" class="nav-link active" data-section="about">About</a>
+                <a href="#model" class="nav-link" data-section="model">Model</a>
+                <a href="#operationalization" class="nav-link" data-section="operationalization">Operationalization</a>
+                <a href="#tool" class="nav-link" data-section="tool">Decision-Support Tool</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-badge">Proof-of-Concept &middot; Decision-Support &amp; Ex Ante Evaluation Tool</p>
+            <h1>TAP-IAP Model</h1>
+            <h2>Accessible Tourism Powered by Personalized AI</h2>
+            <p class="hero-desc">An interactive operationalization of the TAP-IAP conceptual framework for analyzing, designing, and evaluating inclusive tourism experiences mediated by intelligent systems &mdash; grounded in rights, autonomy, and dignity of persons with functional diversity.</p>
+            <div class="hero-actions">
+                <a href="#tool" class="btn btn-primary" onclick="showSection('tool')">Launch Decision-Support Tool</a>
+                <a href="#about" class="btn btn-secondary" onclick="showSection('about')">Read About the Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- ABOUT Section -->
+        <section id="about" class="content-section active-section">
+            <div class="section-container">
+                <h2 class="section-title">About This Project</h2>
+                <div class="two-col">
+                    <div class="col-text">
+                        <h3>Research Context</h3>
+                        <p>The integration of Artificial Intelligence (AI) in tourism is profoundly transforming travel planning and experience delivery. AI offers significant potential for improving accessibility; however, its uncritical application may generate new dynamics of exclusion. Despite growing interest in both accessible tourism and AI-driven tourism, <strong>very few studies integrate both fields in a critical and systematic manner</strong> (Korbiel et al., 2025; Wang et al., 2025).</p>
+
+                        <h3>The TAP-IAP Model</h3>
+                        <p>The <strong>TAP-IAP model</strong> (<em>Turismo Accesible Potenciado por Inteligencia Artificial Personalizada</em> / Accessible Tourism Powered by Personalized AI) is a conceptual framework designed to analyze and guide the design of inclusive tourism experiences mediated by intelligent systems. Its objective is to orient the design, governance, and evaluation of tourism technologies from a perspective centered on the <strong>rights, autonomy, and dignity</strong> of persons with functional diversity.</p>
+
+                        <h3>Purpose of This Tool</h3>
+                        <p>This proof-of-concept operationalizes the TAP-IAP model as an <strong>interactive decision-support and ex ante evaluation tool</strong>, illustrating its practical applicability. It materializes the theoretical framework into functional modules: accessible profiling, explainable algorithmic personalization, bias review, and an indicator dashboard with scenario comparison &mdash; preparing the ground for future empirical research including co-design with persons with disabilities, usability studies, and pilot studies at destinations.</p>
+
+                        <div class="callout callout-info">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <strong>Methodological Note.</strong> This tool does not constitute exhaustive empirical validation, but rather a functional translation of the conceptual framework oriented toward exploring its internal coherence, implementation potential, and the hypotheses that could be tested in future research (Snyder, 2019). The research adopts an exploratory and propositional methodology based on a critical literature review spanning digital tourism, accessibility, disability studies, and algorithmic ethics.
+                            </div>
+                        </div>
+
+                        <h3>Guiding Principles</h3>
+                        <div class="principles-grid">
+                            <div class="principle-card">
+                                <div class="principle-icon"><i class="fas fa-balance-scale"></i></div>
+                                <h4>Rights &amp; Social Justice</h4>
+                                <p>Adopts the social model of disability: barriers are produced by social, normative, cultural, and technological structures, not inherent to the person.</p>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon"><i class="fas fa-drafting-compass"></i></div>
+                                <h4>Universal &amp; Inclusive Design</h4>
+                                <p>All environments, services, and experiences must be usable by all persons without additional adaptations.</p>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon"><i class="fas fa-brain"></i></div>
+                                <h4>Personalized AI Technologies</h4>
+                                <p>Generative AI, computer vision, NLP, and adaptive recommendations adjusted to each user's functional needs and context.</p>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h4>Critical &amp; Ethical Evaluation</h4>
+                                <p>Ethical oversight and continuous evaluation to minimize algorithmic bias, ensure transparency, and prevent inequality reproduction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODEL Section -->
+        <section id="model" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Conceptual Model: TAP-IAP</h2>
+                <p class="section-intro">The TAP-IAP model is composed of four interrelated blocks that articulate critical disability theory, technological development, and tourism practice. Each block represents an intervention level and is explicitly linked to the research propositions (PI1&ndash;PI5), enabling visualization of the internal coherence of the proposed conceptual framework.</p>
+
+                <div class="model-figure">
+                    <figure>
+                        <img src="Esquema conceptual del modelo TAP-IAP.png" alt="Conceptual schema of the TAP-IAP model showing four interrelated components: Inclusive Technology Modules, Ethical Algorithmic Personalization, Tourism Experience Mediators, and Expected Outcomes, all connected through the central concept of Accessible Tourism Powered by Personalized AI" class="model-img">
+                        <figcaption>
+                            <strong>Figure 1.</strong> Conceptual schema of the TAP-IAP model. The model integrates four interrelated blocks &mdash; Inclusive Technology Modules (PI2, PI4), Ethical Algorithmic Personalization (PI3, PI4), Tourism Experience Mediators (PI1, PI2), and Expected (Hypothetical) Outcomes (PI1, PI3, PI4) &mdash; articulated through personalized AI as the central adaptive mechanism. The overarching integrative level (PI5) represents the critical articulation between accessibility, technology, and tourism inclusion. Source: Authors' own elaboration.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <h3>Model Components</h3>
+                <div class="model-components">
+                    <div class="component-card comp-tech">
+                        <div class="comp-header">
+                            <span class="comp-tag">PI2, PI4</span>
+                            <h4><i class="fas fa-microchip"></i> Inclusive Technology Modules</h4>
+                        </div>
+                        <p>Intelligent assistants, computer vision, barrier recognition, and cognitive adaptations represent AI technologies oriented toward identifying obstacles in the tourism environment and dynamically adapting the experience to diverse functional needs.</p>
+                    </div>
+                    <div class="component-card comp-algo">
+                        <div class="comp-header">
+                            <span class="comp-tag">PI3, PI4</span>
+                            <h4><i class="fas fa-sliders-h"></i> Ethical Algorithmic Personalization</h4>
+                        </div>
+                        <p>Adaptive recommendation systems, decision explainability mechanisms, and bias minimization strategies introduce a normative and critical dimension, analyzing social, ethical, and algorithmic risks when AI interprets visitor needs.</p>
+                    </div>
+                    <div class="component-card comp-med">
+                        <div class="comp-header">
+                            <span class="comp-tag">PI1, PI2</span>
+                            <h4><i class="fas fa-heart"></i> Tourism Experience Mediators</h4>
+                        </div>
+                        <p>Perceived autonomy, self-confidence, cognitive barrier reduction, and sense of dignity act as linking elements between technological intervention and the user's subjective experience in functional, emotional, and symbolic dimensions.</p>
+                    </div>
+                    <div class="component-card comp-out">
+                        <div class="comp-header">
+                            <span class="comp-tag">PI1, PI3, PI4</span>
+                            <h4><i class="fas fa-chart-line"></i> Expected Outcomes (Hypothetical)</h4>
+                        </div>
+                        <p>Full participation, greater satisfaction, reduction of accessibility gaps, and effective inclusion reflect the anticipated effects of the articulation between technology, experiential mediation, and ethical principles.</p>
+                    </div>
+                </div>
+
+                <div class="model-integrator">
+                    <h4><i class="fas fa-project-diagram"></i> TAP-IAP Integrative Level (PI5)</h4>
+                    <p>The articulation of all four blocks constitutes the response to PI5: <em>How can a conceptual model critically integrate accessibility frameworks with current technological advances?</em> The model offers an interpretive framework that coherently and socially responsibly guides the design of inclusive tourism experiences.</p>
+                </div>
+
+                <h3 class="mt-2">Research Propositions</h3>
+                <div class="rp-list">
+                    <div class="rp-item">
+                        <span class="rp-badge">PI1</span>
+                        <p>How do physical, cognitive, communicative, and attitudinal barriers influence the tourism experience of persons with disabilities, in both its functional and emotional-symbolic dimensions?</p>
+                    </div>
+                    <div class="rp-item">
+                        <span class="rp-badge">PI2</span>
+                        <p>How can personalized AI contribute to expanding the tourism autonomy of persons with disabilities, addressing their diverse functional needs?</p>
+                    </div>
+                    <div class="rp-item">
+                        <span class="rp-badge">PI3</span>
+                        <p>What social, ethical, and algorithmic risks emerge when AI technologies intervene in interpreting visitors' needs, preferences, and capabilities?</p>
+                    </div>
+                    <div class="rp-item">
+                        <span class="rp-badge">PI4</span>
+                        <p>What principles of universal accessibility and technological justice should guide the design of AI-based tourism systems to prevent new inequalities?</p>
+                    </div>
+                    <div class="rp-item rp-integrator">
+                        <span class="rp-badge rp-badge-int">PI5</span>
+                        <p>How can a conceptual model critically integrate accessibility frameworks with current technological advances?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPERATIONALIZATION Section -->
+        <section id="operationalization" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Construct Operationalization Table</h2>
+                <p class="section-intro">The following table connects each TAP-IAP model component with its conceptual definition, observable indicators, potential measurement instruments, and level of analysis. This operationalization enhances methodological rigor, transferability, and value for public policy by making explicit the connection between the theoretical model and its practical implementation.</p>
+
+                <div class="table-responsive">
+                    <table class="op-table">
+                        <thead>
+                            <tr>
+                                <th>TAP-IAP Component</th>
+                                <th>(a) Conceptual Definition</th>
+                                <th>(b) Observable Indicator</th>
+                                <th>(c) Potential Measurement Instrument</th>
+                                <th>(d) Level of Analysis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Inclusive Technology Modules -->
+                            <tr class="row-group-header">
+                                <td colspan="5"><i class="fas fa-microchip"></i> Inclusive Technology Modules (PI2, PI4)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intelligent Assistants</strong></td>
+                                <td>AI-driven conversational or navigational agents that provide real-time, context-sensitive support adapted to diverse functional profiles (Camacho-Pereira, 2025; Buhalis et al., 2023).</td>
+                                <td>Task completion rate for users with different disability profiles; response appropriateness score; user-initiated vs. system-initiated interactions.</td>
+                                <td>System Usability Scale (SUS) adapted for accessibility; task-based usability testing protocols; interaction log analysis.</td>
+                                <td><span class="level-badge level-user">User</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Computer Vision</strong></td>
+                                <td>Image recognition systems capable of identifying physical barriers, signage, obstacles, and environmental features relevant to accessibility (Iodice et al., 2025).</td>
+                                <td>Barrier detection accuracy (%); false negative rate for accessibility obstacles; processing latency in real-time contexts.</td>
+                                <td>Precision/recall metrics on annotated accessibility datasets; field-testing in tourism environments; expert validation panels.</td>
+                                <td><span class="level-badge level-dest">Destination</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Barrier Recognition</strong></td>
+                                <td>Automated identification and classification of physical, cognitive, sensorial, and communicative barriers across tourism value chains (L&oacute;pez-del-Pino et al., 2026; Nigg et al., 2025).</td>
+                                <td>Number and typology of barriers detected per route/venue; concordance rate with expert accessibility audits.</td>
+                                <td>Concordance analysis with standardized accessibility audits (e.g., DALCO criteria); GIS-based barrier mapping; crowdsourced validation.</td>
+                                <td><span class="level-badge level-dest">Destination</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cognitive Adaptations</strong></td>
+                                <td>Dynamic content simplification, multimodal presentation, and information structuring to reduce cognitive load for users with intellectual or cognitive disabilities (Tarvainen, 2025).</td>
+                                <td>Reading level of adapted content (Flesch-Kincaid); comprehension test scores; time-on-task for information retrieval.</td>
+                                <td>Readability indices; cognitive walkthrough with target users; eye-tracking studies; standardized comprehension assessments.</td>
+                                <td><span class="level-badge level-user">User</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <!-- Ethical Algorithmic Personalization -->
+                            <tr class="row-group-header">
+                                <td colspan="5"><i class="fas fa-sliders-h"></i> Ethical Algorithmic Personalization (PI3, PI4)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Recommendation Systems</strong></td>
+                                <td>Adaptive algorithms that generate personalized tourism suggestions (routes, services, activities) based on functional profiles, preferences, and contextual variables (Law et al., 2024; Koo et al., 2025).</td>
+                                <td>Recommendation acceptance rate; diversity index of recommended options; coverage across disability profiles.</td>
+                                <td>A/B testing with controlled user groups; recommendation diversity metrics (e.g., Gini coefficient); profile-stratified acceptance analysis.</td>
+                                <td><span class="level-badge level-user">User</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Decision Explainability</strong></td>
+                                <td>Mechanisms that make algorithmic reasoning transparent and understandable to users, enabling informed consent and meaningful control over AI-mediated decisions (Nwokoye et al., 2024; Dignum, 2019).</td>
+                                <td>User comprehension rate of explanations; perceived transparency score; proportion of decisions with accessible explanations.</td>
+                                <td>Explanation satisfaction questionnaires; think-aloud protocols; Likert-scale transparency perception scales.</td>
+                                <td><span class="level-badge level-user">User</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bias Minimization</strong></td>
+                                <td>Strategies for detecting, measuring, and mitigating algorithmic biases that may discriminate against or invisibilize persons with non-normative functional profiles (Crawford, 2021; Tevissen, 2024; Bennett &amp; Keyes, 2020).</td>
+                                <td>Disparity in recommendation quality across disability groups; fairness metrics (demographic parity, equalized odds); bias audit pass rate.</td>
+                                <td>Algorithmic fairness audits; counterfactual testing; intersectional bias analysis frameworks; external review panels including disability organizations.</td>
+                                <td><span class="level-badge level-system">System</span> <span class="level-badge level-dest">Destination</span></td>
+                            </tr>
+                            <!-- Tourism Experience Mediators -->
+                            <tr class="row-group-header">
+                                <td colspan="5"><i class="fas fa-heart"></i> Tourism Experience Mediators (PI1, PI2)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Perceived Autonomy</strong></td>
+                                <td>The user's subjective sense of being able to make independent, informed decisions throughout the tourism experience without enforced dependency (Gillovic &amp; McIntosh, 2020; Darcy, 2011).</td>
+                                <td>Self-reported autonomy scores; ratio of independent vs. assisted decisions; perceived control over itinerary modifications.</td>
+                                <td>Adapted Self-Determination Scale; autonomy subscales from tourism experience questionnaires; semi-structured interviews.</td>
+                                <td><span class="level-badge level-user">User</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Self-Confidence</strong></td>
+                                <td>The degree to which users feel capable of navigating tourism environments and managing unexpected situations through AI-mediated support (Hansen &amp; Fyall, 2021).</td>
+                                <td>Pre/post confidence scores; willingness to explore unfamiliar destinations; self-efficacy ratings in tourism contexts.</td>
+                                <td>General Self-Efficacy Scale (GSE) adapted for tourism; pre-post travel confidence surveys; travel diary analysis.</td>
+                                <td><span class="level-badge level-user">User</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cognitive Barrier Reduction</strong></td>
+                                <td>Decrease in the cognitive effort required to process tourism information, plan activities, and navigate environments, facilitated by AI-driven content adaptation (Tarvainen, 2025; Fuchs, 2023).</td>
+                                <td>Reduction in reported confusion/disorientation; decrease in planning time; information comprehension improvement.</td>
+                                <td>NASA-TLX (cognitive load); wayfinding success metrics; pre/post comprehension tests; information processing time measurements.</td>
+                                <td><span class="level-badge level-user">User</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sense of Dignity</strong></td>
+                                <td>The user's perception of being treated with respect, recognition, and equality throughout the tourism experience, without stigmatization or infantilization (Shakespeare, 2013; Poria et al., 2023).</td>
+                                <td>Dignity perception scores; incidence of reported stigmatizing interactions; perceived equality of treatment.</td>
+                                <td>Dignity in Tourism Scale (to be developed); critical incident technique; narrative interviews; photovoice methods.</td>
+                                <td><span class="level-badge level-user">User</span></td>
+                            </tr>
+                            <!-- Expected Outcomes -->
+                            <tr class="row-group-header">
+                                <td colspan="5"><i class="fas fa-chart-line"></i> Expected Outcomes &mdash; Hypothetical (PI1, PI3, PI4)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Full Participation</strong></td>
+                                <td>The effective engagement of persons with disabilities in all tourism activities on an equal basis with others, consistent with UNCRPD Article 30 (UNWTO, 2021).</td>
+                                <td>Proportion of tourism activities accessible and completed; participation rate in optional activities; scope of accessible itinerary options.</td>
+                                <td>Activity participation checklists; accessibility coverage indices per destination; comparative participation rates (with/without AI support).</td>
+                                <td><span class="level-badge level-user">User</span> <span class="level-badge level-dest">Destination</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Greater Satisfaction</strong></td>
+                                <td>Enhanced overall tourism experience quality as perceived by persons with disabilities, encompassing functional, emotional, and symbolic dimensions (Hansen &amp; Fyall, 2021; Darcy, 2011).</td>
+                                <td>Overall satisfaction scores; emotional valence ratings; intention to revisit/recommend; Net Promoter Score.</td>
+                                <td>Adapted Tourism Satisfaction Index; experience quality scales; sentiment analysis of post-trip narratives; longitudinal satisfaction tracking.</td>
+                                <td><span class="level-badge level-user">User</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Accessibility Gap Reduction</strong></td>
+                                <td>Narrowing of the discrepancy between declared/promoted accessibility and actually experienced accessibility at tourism destinations (Rubio-Escuderos et al., 2025; Valverde et al., 2024).</td>
+                                <td>Declared vs. experienced accessibility concordance rate; number of reported accessibility incidents; gap reduction over time.</td>
+                                <td>Accessibility gap index (declared vs. experienced); incident reporting systems; longitudinal audit comparisons; mystery visitor assessments.</td>
+                                <td><span class="level-badge level-dest">Destination</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Effective Inclusion</strong></td>
+                                <td>Systemic transformation of tourism environments and practices to structurally accommodate functional diversity, beyond individual accommodation (Gillovic &amp; McIntosh, 2020; Alemán-Selva et al., 2024).</td>
+                                <td>Proportion of universally designed tourism services; inclusion policy adoption rate; co-design participation metrics.</td>
+                                <td>Universal Design compliance indices; policy analysis frameworks; stakeholder inclusion audits; disability organization involvement metrics.</td>
+                                <td><span class="level-badge level-dest">Destination</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                            <!-- Integrative Level -->
+                            <tr class="row-group-header row-group-integrator">
+                                <td colspan="5"><i class="fas fa-project-diagram"></i> TAP-IAP Integrative Level (PI5)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Critical Articulation</strong></td>
+                                <td>The coherent integration of accessibility, technology, and tourism inclusion frameworks from a critical, rights-based perspective that avoids technocentric reductionism (Crawford, 2021; Goodley, 2024).</td>
+                                <td>Internal coherence of model components; traceability PI1&ndash;PI5 to components; stakeholder validation scores.</td>
+                                <td>Expert panel validation (Delphi method); internal consistency analysis; participatory evaluation with disability organizations and tourism authorities.</td>
+                                <td><span class="level-badge level-user">User</span> <span class="level-badge level-dest">Destination</span> <span class="level-badge level-system">System</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-academic">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <strong>Methodological Significance.</strong> This operationalization table bridges the gap between the TAP-IAP theoretical model and empirical research by specifying how each abstract construct can be observed, measured, and analyzed. It supports: (1) hypothesis formulation for future empirical studies, (2) design criteria for co-creation processes with persons with disabilities, (3) evaluation frameworks for public policy on accessible smart tourism, and (4) benchmarking standards for AI-driven tourism systems.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOOL Section -->
+        <section id="tool" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Decision-Support &amp; Ex Ante Evaluation Tool</h2>
+                <p class="section-intro">This interactive tool operationalizes the TAP-IAP model flow: (a) functional profiling, (b) personalization engine with traceability, (c) algorithmic accessibility module, and (d) indicator dashboard with scenario comparison. Navigate the tabs below to explore each module.</p>
+
+                <div class="tool-tabs">
+                    <button class="tool-tab active" data-tab="profiling">
+                        <i class="fas fa-user-cog"></i>
+                        <span>Functional Profiling</span>
+                    </button>
+                    <button class="tool-tab" data-tab="personalization">
+                        <i class="fas fa-magic"></i>
+                        <span>Personalization Engine</span>
+                    </button>
+                    <button class="tool-tab" data-tab="accessibility">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Algorithmic Accessibility</span>
+                    </button>
+                    <button class="tool-tab" data-tab="dashboard">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Indicator Dashboard</span>
+                    </button>
+                </div>
+
+                <!-- Tab: Functional Profiling -->
+                <div class="tool-panel active" id="panel-profiling">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-user-cog"></i> Module A: Functional Profiling</h3>
+                        <p>Captures user preferences, accessibility needs, and contextual variables to build a comprehensive functional profile. This module operationalizes the TAP-IAP principle that personalization must begin from a rights-based understanding of diverse functional needs rather than deficit-based categorization.</p>
+                    </div>
+
+                    <div class="profiling-grid">
+                        <!-- Disability Profile -->
+                        <div class="profile-section">
+                            <h4><i class="fas fa-wheelchair"></i> Functional Profile</h4>
+                            <p class="field-desc">Select all applicable functional characteristics. Multiple selections are supported to reflect intersectional needs.</p>
+                            <div class="checkbox-group">
+                                <label class="cb-label"><input type="checkbox" name="profile" value="mobility"> Reduced mobility</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="visual"> Visual impairment</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="hearing"> Hearing impairment</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="cognitive"> Cognitive / intellectual disability</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="autism"> Autism spectrum</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="psychosocial"> Psychosocial disability</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="elderly"> Age-related limitations</label>
+                                <label class="cb-label"><input type="checkbox" name="profile" value="temporary"> Temporary impairment</label>
+                            </div>
+                        </div>
+
+                        <!-- Support Needs -->
+                        <div class="profile-section">
+                            <h4><i class="fas fa-hands-helping"></i> Support Needs</h4>
+                            <p class="field-desc">Indicate the level and type of support typically required during travel.</p>
+                            <div class="form-group">
+                                <label>Assistance level</label>
+                                <select id="assistance-level">
+                                    <option value="independent">Fully independent</option>
+                                    <option value="occasional">Occasional support needed</option>
+                                    <option value="regular">Regular support needed</option>
+                                    <option value="continuous">Continuous support required</option>
+                                </select>
+                            </div>
+                            <div class="checkbox-group">
+                                <label class="cb-label"><input type="checkbox" name="support" value="companion"> Travels with companion/carer</label>
+                                <label class="cb-label"><input type="checkbox" name="support" value="guide-dog"> Uses guide/assistance animal</label>
+                                <label class="cb-label"><input type="checkbox" name="support" value="wheelchair"> Uses wheelchair / mobility device</label>
+                                <label class="cb-label"><input type="checkbox" name="support" value="communication"> Uses AAC (augmentative communication)</label>
+                            </div>
+                        </div>
+
+                        <!-- Preferences -->
+                        <div class="profile-section">
+                            <h4><i class="fas fa-heart"></i> Tourism Preferences</h4>
+                            <p class="field-desc">Indicate preferred tourism activities and interests.</p>
+                            <div class="checkbox-group">
+                                <label class="cb-label"><input type="checkbox" name="prefs" value="cultural"> Cultural heritage &amp; museums</label>
+                                <label class="cb-label"><input type="checkbox" name="prefs" value="nature"> Nature &amp; outdoor activities</label>
+                                <label class="cb-label"><input type="checkbox" name="prefs" value="gastronomy"> Gastronomy &amp; food tours</label>
+                                <label class="cb-label"><input type="checkbox" name="prefs" value="wellness"> Wellness &amp; relaxation</label>
+                                <label class="cb-label"><input type="checkbox" name="prefs" value="adventure"> Adventure &amp; sports</label>
+                                <label class="cb-label"><input type="checkbox" name="prefs" value="social"> Social &amp; community events</label>
+                            </div>
+                        </div>
+
+                        <!-- Context -->
+                        <div class="profile-section">
+                            <h4><i class="fas fa-map-marked-alt"></i> Travel Context</h4>
+                            <p class="field-desc">Contextual variables that affect accessibility requirements.</p>
+                            <div class="form-group">
+                                <label>Destination type</label>
+                                <select id="dest-type">
+                                    <option value="">Select...</option>
+                                    <option value="urban">Urban destination</option>
+                                    <option value="coastal">Coastal / beach destination</option>
+                                    <option value="rural">Rural / countryside</option>
+                                    <option value="mountain">Mountain / nature reserve</option>
+                                    <option value="historic">Historic / heritage site</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Trip duration</label>
+                                <select id="trip-duration">
+                                    <option value="day">Day trip</option>
+                                    <option value="weekend">Weekend (2&ndash;3 days)</option>
+                                    <option value="week">One week</option>
+                                    <option value="extended">Extended stay (&gt;1 week)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Season</label>
+                                <select id="season">
+                                    <option value="high">High season</option>
+                                    <option value="shoulder">Shoulder season</option>
+                                    <option value="low">Low season</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Information Preferences -->
+                        <div class="profile-section">
+                            <h4><i class="fas fa-info-circle"></i> Information &amp; Interface Preferences</h4>
+                            <p class="field-desc">How information should be presented and at what complexity level.</p>
+                            <div class="checkbox-group">
+                                <label class="cb-label"><input type="checkbox" name="info" value="easy-read"> Easy-read / plain language</label>
+                                <label class="cb-label"><input type="checkbox" name="info" value="visual"> Visual / pictographic content</label>
+                                <label class="cb-label"><input type="checkbox" name="info" value="audio"> Audio descriptions</label>
+                                <label class="cb-label"><input type="checkbox" name="info" value="sign-lang"> Sign language content</label>
+                                <label class="cb-label"><input type="checkbox" name="info" value="high-contrast"> High contrast interface</label>
+                                <label class="cb-label"><input type="checkbox" name="info" value="large-text"> Large text</label>
+                            </div>
+                        </div>
+
+                        <!-- Privacy -->
+                        <div class="profile-section">
+                            <h4><i class="fas fa-lock"></i> Privacy &amp; Data Consent</h4>
+                            <p class="field-desc">Control how your functional profile data is used. Aligned with GDPR and ethical AI principles.</p>
+                            <div class="checkbox-group">
+                                <label class="cb-label"><input type="checkbox" name="privacy" value="personalization" checked> Allow data use for personalization</label>
+                                <label class="cb-label"><input type="checkbox" name="privacy" value="research"> Allow anonymized use for research</label>
+                                <label class="cb-label"><input type="checkbox" name="privacy" value="third-party"> Allow sharing with verified service providers</label>
+                            </div>
+                            <div class="form-group">
+                                <label>Data retention preference</label>
+                                <select id="data-retention">
+                                    <option value="session">This session only</option>
+                                    <option value="trip">Duration of trip</option>
+                                    <option value="persistent">Persistent profile (can be deleted anytime)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-actions">
+                        <button class="btn btn-primary" onclick="generateProfile()">
+                            <i class="fas fa-cogs"></i> Generate Functional Profile
+                        </button>
+                    </div>
+
+                    <div id="profile-result" class="result-panel" style="display:none;"></div>
+                </div>
+
+                <!-- Tab: Personalization Engine -->
+                <div class="tool-panel" id="panel-personalization">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-magic"></i> Module B: Personalization Engine with Traceability</h3>
+                        <p>Generates personalized tourism recommendations with full algorithmic traceability &mdash; explaining <em>why</em> each recommendation is made and <em>what data</em> informs it. This module operationalizes the TAP-IAP components of adaptive recommendation systems and decision explainability.</p>
+                    </div>
+
+                    <div class="callout callout-warning" id="no-profile-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>Please complete the <strong>Functional Profiling</strong> module first to generate personalized recommendations based on your profile.</div>
+                    </div>
+
+                    <div id="personalization-content" style="display:none;">
+                        <div class="engine-controls">
+                            <div class="form-group">
+                                <label>Personalization intensity</label>
+                                <input type="range" id="pers-intensity" min="1" max="5" value="3" class="slider">
+                                <div class="slider-labels">
+                                    <span>Minimal filtering</span>
+                                    <span>Balanced</span>
+                                    <span>Highly personalized</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Exploration vs. Safety preference</label>
+                                <input type="range" id="explore-safety" min="1" max="5" value="3" class="slider">
+                                <div class="slider-labels">
+                                    <span>Maximize safety</span>
+                                    <span>Balanced</span>
+                                    <span>Maximize exploration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="generateRecommendations()">
+                            <i class="fas fa-magic"></i> Generate Personalized Recommendations
+                        </button>
+
+                        <div id="recommendations-result" class="result-panel" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <!-- Tab: Algorithmic Accessibility -->
+                <div class="tool-panel" id="panel-accessibility">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-shield-alt"></i> Module C: Algorithmic Accessibility Review</h3>
+                        <p>Evaluates the ethical and accessibility dimensions of the personalization process: bias detection, user control mechanisms, privacy safeguards, and ethical oversight. This module operationalizes the TAP-IAP principle that AI in tourism must be governed by universal accessibility and technological justice.</p>
+                    </div>
+
+                    <div class="accessibility-grid">
+                        <!-- Bias Review -->
+                        <div class="access-card">
+                            <div class="access-card-header bias-header">
+                                <i class="fas fa-balance-scale-right"></i>
+                                <h4>Bias Detection &amp; Mitigation</h4>
+                            </div>
+                            <div class="access-card-body">
+                                <p>Analyzes whether the recommendation system produces equitable outcomes across disability profiles, detecting potential ableist algorithmic bias (Crawford, 2021; Tevissen, 2024).</p>
+                                <div class="metric-display">
+                                    <div class="metric">
+                                        <span class="metric-label">Demographic Parity</span>
+                                        <div class="progress-bar"><div class="progress-fill" style="width:87%" data-value="0.87"></div></div>
+                                        <span class="metric-value">0.87</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Equalized Odds</span>
+                                        <div class="progress-bar"><div class="progress-fill" style="width:82%" data-value="0.82"></div></div>
+                                        <span class="metric-value">0.82</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Recommendation Coverage</span>
+                                        <div class="progress-bar"><div class="progress-fill" style="width:91%" data-value="0.91"></div></div>
+                                        <span class="metric-value">0.91</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Intersectional Fairness</span>
+                                        <div class="progress-bar"><div class="progress-fill" style="width:75%" data-value="0.75"></div></div>
+                                        <span class="metric-value">0.75</span>
+                                    </div>
+                                </div>
+                                <div class="bias-alerts" id="bias-alerts">
+                                    <div class="alert alert-warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <span><strong>Attention:</strong> Intersectional fairness score below threshold (0.80). Recommendation diversity may be reduced for users with combined mobility + cognitive profiles. Mitigation: expand training data for intersectional profiles.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Control -->
+                        <div class="access-card">
+                            <div class="access-card-header control-header">
+                                <i class="fas fa-user-shield"></i>
+                                <h4>User Control &amp; Agency</h4>
+                            </div>
+                            <div class="access-card-body">
+                                <p>Ensures users maintain meaningful control over AI-mediated decisions, aligned with the TAP-IAP principle that autonomy is a relational right, not a feature granted by technology (Gillovic &amp; McIntosh, 2020).</p>
+                                <div class="control-checklist">
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Users can override any recommendation</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Personalization intensity is user-adjustable</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Users can request explanation for any recommendation</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Profile data can be modified or deleted at any time</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> System provides alternatives when preferred option is inaccessible</div>
+                                    <div class="check-item check-warn"><i class="fas fa-exclamation-circle"></i> Companion/carer access controls &mdash; <em>partially implemented</em></div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Opt-out from all algorithmic personalization is available</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Privacy -->
+                        <div class="access-card">
+                            <div class="access-card-header privacy-header">
+                                <i class="fas fa-lock"></i>
+                                <h4>Privacy &amp; Data Protection</h4>
+                            </div>
+                            <div class="access-card-body">
+                                <p>Assesses compliance with privacy standards, recognizing that disability-related data constitutes sensitive personal information requiring heightened protection (GDPR Art. 9; Dignum, 2019).</p>
+                                <div class="control-checklist">
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Explicit consent obtained for all data processing</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Data minimization principle applied</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Functional profile data encrypted at rest and in transit</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Right to erasure implemented (GDPR Art. 17)</div>
+                                    <div class="check-item check-warn"><i class="fas fa-exclamation-circle"></i> Data portability &mdash; <em>specification in progress</em></div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> No profiling for purposes beyond stated service</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Automated decision review mechanism available</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ethical Safeguards -->
+                        <div class="access-card">
+                            <div class="access-card-header ethics-header">
+                                <i class="fas fa-gavel"></i>
+                                <h4>Ethical Safeguards &amp; Governance</h4>
+                            </div>
+                            <div class="access-card-body">
+                                <p>Governance mechanisms ensuring the system operates within ethical boundaries, incorporating disability community participation in oversight (Bennett &amp; Keyes, 2020; Hamraie, 2017).</p>
+                                <div class="control-checklist">
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Algorithmic impact assessment conducted</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> External ethics advisory board with disability representation</div>
+                                    <div class="check-item check-warn"><i class="fas fa-exclamation-circle"></i> Regular co-design sessions with persons with disabilities &mdash; <em>planned for pilot phase</em></div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Incident reporting and response protocol defined</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> System does not infer disability status without explicit user input</div>
+                                    <div class="check-item check-pass"><i class="fas fa-check-circle"></i> Non-stigmatizing language verified in all outputs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-info mt-2">
+                        <i class="fas fa-clipboard-check"></i>
+                        <div>
+                            <strong>Algorithmic Accessibility Compliance Summary.</strong> The system achieves <strong>85% compliance</strong> with the proposed TAP-IAP algorithmic accessibility standards. Key areas for improvement include intersectional fairness optimization, companion access controls, and data portability implementation. These findings would inform governance recommendations for destination management organizations and tourism technology providers.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Dashboard -->
+                <div class="tool-panel" id="panel-dashboard">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-tachometer-alt"></i> Module D: Indicator Dashboard &amp; Scenario Comparison</h3>
+                        <p>Monitors key indicators aligned with TAP-IAP model outcomes, enables comparison between intervention scenarios, and generates governance-ready reports for destination authorities and enterprises.</p>
+                    </div>
+
+                    <!-- Scenario Selector -->
+                    <div class="scenario-selector">
+                        <h4>Scenario Configuration</h4>
+                        <div class="scenario-grid">
+                            <div class="scenario-card scenario-active" data-scenario="baseline">
+                                <div class="scenario-tag">Scenario A</div>
+                                <h5>Baseline</h5>
+                                <p>Current state without AI-powered personalization</p>
+                            </div>
+                            <div class="scenario-card" data-scenario="partial">
+                                <div class="scenario-tag">Scenario B</div>
+                                <h5>Partial Implementation</h5>
+                                <p>Basic profiling + standard recommendations</p>
+                            </div>
+                            <div class="scenario-card" data-scenario="full">
+                                <div class="scenario-tag">Scenario C</div>
+                                <h5>Full TAP-IAP</h5>
+                                <p>Complete model with ethical oversight</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Indicators -->
+                    <div class="dashboard-grid">
+                        <!-- Uncertainty Reduction -->
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <h5>Uncertainty Reduction</h5>
+                                <span class="indicator-pi">PI1, PI2</span>
+                            </div>
+                            <div class="indicator-bars">
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario A</span>
+                                    <div class="bar-track"><div class="bar-fill bar-a" style="width:25%"></div></div>
+                                    <span class="bar-val">25%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario B</span>
+                                    <div class="bar-track"><div class="bar-fill bar-b" style="width:58%"></div></div>
+                                    <span class="bar-val">58%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario C</span>
+                                    <div class="bar-track"><div class="bar-fill bar-c" style="width:84%"></div></div>
+                                    <span class="bar-val">84%</span>
+                                </div>
+                            </div>
+                            <p class="indicator-note">Estimated reduction in pre-trip information uncertainty for users with functional diversity.</p>
+                        </div>
+
+                        <!-- Perceived Autonomy -->
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <h5>Perceived Autonomy</h5>
+                                <span class="indicator-pi">PI1, PI2</span>
+                            </div>
+                            <div class="indicator-bars">
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario A</span>
+                                    <div class="bar-track"><div class="bar-fill bar-a" style="width:35%"></div></div>
+                                    <span class="bar-val">3.5/10</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario B</span>
+                                    <div class="bar-track"><div class="bar-fill bar-b" style="width:56%"></div></div>
+                                    <span class="bar-val">5.6/10</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario C</span>
+                                    <div class="bar-track"><div class="bar-fill bar-c" style="width:81%"></div></div>
+                                    <span class="bar-val">8.1/10</span>
+                                </div>
+                            </div>
+                            <p class="indicator-note">Self-reported autonomy perception (adapted Self-Determination Scale).</p>
+                        </div>
+
+                        <!-- Anticipated Barriers -->
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <h5>Anticipated Barriers</h5>
+                                <span class="indicator-pi">PI2, PI4</span>
+                            </div>
+                            <div class="indicator-bars">
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario A</span>
+                                    <div class="bar-track"><div class="bar-fill bar-a" style="width:15%"></div></div>
+                                    <span class="bar-val">15%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario B</span>
+                                    <div class="bar-track"><div class="bar-fill bar-b" style="width:52%"></div></div>
+                                    <span class="bar-val">52%</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario C</span>
+                                    <div class="bar-track"><div class="bar-fill bar-c" style="width:89%"></div></div>
+                                    <span class="bar-val">89%</span>
+                                </div>
+                            </div>
+                            <p class="indicator-note">Proportion of physical/cognitive barriers identified and communicated before arrival.</p>
+                        </div>
+
+                        <!-- Accessibility Incidents -->
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <h5>Accessibility Incidents</h5>
+                                <span class="indicator-pi">PI1, PI3</span>
+                            </div>
+                            <div class="indicator-bars">
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario A</span>
+                                    <div class="bar-track"><div class="bar-fill bar-a-inv" style="width:78%"></div></div>
+                                    <span class="bar-val">7.8 avg</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario B</span>
+                                    <div class="bar-track"><div class="bar-fill bar-b-inv" style="width:45%"></div></div>
+                                    <span class="bar-val">4.5 avg</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario C</span>
+                                    <div class="bar-track"><div class="bar-fill bar-c-inv" style="width:21%"></div></div>
+                                    <span class="bar-val">2.1 avg</span>
+                                </div>
+                            </div>
+                            <p class="indicator-note">Average number of unresolved accessibility incidents per trip (lower is better).</p>
+                        </div>
+
+                        <!-- Satisfaction -->
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <h5>Overall Satisfaction</h5>
+                                <span class="indicator-pi">PI1, PI2</span>
+                            </div>
+                            <div class="indicator-bars">
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario A</span>
+                                    <div class="bar-track"><div class="bar-fill bar-a" style="width:42%"></div></div>
+                                    <span class="bar-val">4.2/10</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario B</span>
+                                    <div class="bar-track"><div class="bar-fill bar-b" style="width:63%"></div></div>
+                                    <span class="bar-val">6.3/10</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario C</span>
+                                    <div class="bar-track"><div class="bar-fill bar-c" style="width:85%"></div></div>
+                                    <span class="bar-val">8.5/10</span>
+                                </div>
+                            </div>
+                            <p class="indicator-note">Composite satisfaction index (functional + emotional + symbolic dimensions).</p>
+                        </div>
+
+                        <!-- Recommendation Equity -->
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <h5>Recommendation Equity</h5>
+                                <span class="indicator-pi">PI3, PI4</span>
+                            </div>
+                            <div class="indicator-bars">
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario A</span>
+                                    <div class="bar-track"><div class="bar-fill bar-a" style="width:30%"></div></div>
+                                    <span class="bar-val">N/A</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario B</span>
+                                    <div class="bar-track"><div class="bar-fill bar-b" style="width:61%"></div></div>
+                                    <span class="bar-val">0.61</span>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">Scenario C</span>
+                                    <div class="bar-track"><div class="bar-fill bar-c" style="width:88%"></div></div>
+                                    <span class="bar-val">0.88</span>
+                                </div>
+                            </div>
+                            <p class="indicator-note">Gini-based equity index of recommendation quality across disability profiles (1.0 = perfectly equitable).</p>
+                        </div>
+                    </div>
+
+                    <!-- Comparative Summary -->
+                    <div class="comparison-summary">
+                        <h4><i class="fas fa-chart-bar"></i> Comparative Scenario Summary</h4>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Indicator</th>
+                                    <th>A: Baseline</th>
+                                    <th>B: Partial</th>
+                                    <th>C: Full TAP-IAP</th>
+                                    <th>Improvement (A&rarr;C)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Uncertainty Reduction</td>
+                                    <td>25%</td>
+                                    <td>58%</td>
+                                    <td>84%</td>
+                                    <td class="improvement">+59 pp</td>
+                                </tr>
+                                <tr>
+                                    <td>Perceived Autonomy</td>
+                                    <td>3.5/10</td>
+                                    <td>5.6/10</td>
+                                    <td>8.1/10</td>
+                                    <td class="improvement">+4.6 pts</td>
+                                </tr>
+                                <tr>
+                                    <td>Barriers Anticipated</td>
+                                    <td>15%</td>
+                                    <td>52%</td>
+                                    <td>89%</td>
+                                    <td class="improvement">+74 pp</td>
+                                </tr>
+                                <tr>
+                                    <td>Accessibility Incidents</td>
+                                    <td>7.8</td>
+                                    <td>4.5</td>
+                                    <td>2.1</td>
+                                    <td class="improvement">&minus;73%</td>
+                                </tr>
+                                <tr>
+                                    <td>Overall Satisfaction</td>
+                                    <td>4.2/10</td>
+                                    <td>6.3/10</td>
+                                    <td>8.5/10</td>
+                                    <td class="improvement">+4.3 pts</td>
+                                </tr>
+                                <tr>
+                                    <td>Recommendation Equity</td>
+                                    <td>N/A</td>
+                                    <td>0.61</td>
+                                    <td>0.88</td>
+                                    <td class="improvement">+0.27</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="callout callout-academic mt-2">
+                        <i class="fas fa-file-alt"></i>
+                        <div>
+                            <strong>Note on Data.</strong> The indicator values presented are hypothetical projections derived from the TAP-IAP theoretical framework and aligned with findings in the accessible tourism literature. They serve as <em>evaluable hypotheses</em> and design criteria for future empirical validation through co-design with persons with disabilities, usability studies, and pilot implementations at tourism destinations (Snyder, 2019; Dickson et al., 2024).
+                        </div>
+                    </div>
+
+                    <div class="panel-actions">
+                        <button class="btn btn-primary" onclick="exportReport()">
+                            <i class="fas fa-file-download"></i> Export Governance Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-info">
+                <p><strong>ATP-PAI: Accessible Tourism Powered by Personalized AI</strong></p>
+                <p>Proof-of-concept operationalization of the TAP-IAP model. This tool is part of an academic research project and does not constitute a commercial product or validated empirical instrument.</p>
+                <p class="footer-ref">Based on: <em>Personalized AI and Accessible Tourism: Conceptual Framework and Operationalization for Advancing Rights, Autonomy, and Participation</em>.</p>
+            </div>
+            <div class="footer-links">
+                <p><a href="https://github.com/upocuantitativo/ATP-PAI" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
