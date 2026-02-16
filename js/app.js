@@ -607,10 +607,92 @@ function animateGauges() {
 }
 
 // ==============================
+// Hero Animated Counters
+// ==============================
+
+function animateCounters() {
+    document.querySelectorAll('.hero-stat-num').forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const duration = 1500;
+        const step = Math.max(1, Math.floor(target / (duration / 50)));
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            counter.textContent = current;
+        }, 50);
+    });
+}
+
+// ==============================
+// Radar Dot Tooltips
+// ==============================
+
+function initRadarTooltips() {
+    const svg = document.getElementById('radar-chart');
+    if (!svg) return;
+
+    const tooltip = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    tooltip.setAttribute('id', 'radar-tooltip');
+    tooltip.style.display = 'none';
+
+    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('rx', '4');
+    rect.setAttribute('ry', '4');
+    rect.setAttribute('fill', '#1a5276');
+    rect.setAttribute('opacity', '0.95');
+
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('fill', 'white');
+    text.setAttribute('font-size', '11');
+    text.setAttribute('font-weight', '600');
+    text.setAttribute('text-anchor', 'middle');
+
+    tooltip.appendChild(rect);
+    tooltip.appendChild(text);
+    svg.appendChild(tooltip);
+
+    document.querySelectorAll('.radar-dot').forEach(dot => {
+        dot.addEventListener('mouseenter', function() {
+            const label = this.getAttribute('data-label');
+            const cx = parseFloat(this.getAttribute('cx'));
+            const cy = parseFloat(this.getAttribute('cy'));
+
+            text.textContent = label;
+            const bbox = text.getBBox ? text.getBBox() : { width: label.length * 7, height: 14 };
+            const pw = bbox.width + 16;
+            const ph = 24;
+
+            rect.setAttribute('width', pw);
+            rect.setAttribute('height', ph);
+            rect.setAttribute('x', cx - pw / 2);
+            rect.setAttribute('y', cy - ph - 12);
+            text.setAttribute('x', cx);
+            text.setAttribute('y', cy - ph / 2 - 5);
+
+            tooltip.style.display = 'block';
+        });
+
+        dot.addEventListener('mouseleave', function() {
+            tooltip.style.display = 'none';
+        });
+    });
+}
+
+// ==============================
 // Initialization
 // ==============================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Animate hero counters
+    animateCounters();
+
+    // Init radar tooltips
+    initRadarTooltips();
     // Animate progress bars on visibility
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

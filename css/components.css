@@ -1,4 +1,132 @@
 /* ==============================
+   Comparison Cards (Table 3)
+   ============================== */
+
+.comparison-cards {
+    margin: 1rem 0;
+}
+
+.compare-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.compare-dimension,
+.compare-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 0;
+}
+
+.compare-dimension {
+    background: var(--primary-dark);
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.compare-dimension > div {
+    padding: 0.75rem 1rem;
+}
+
+.compare-row {
+    background: white;
+    border-bottom: 1px solid var(--border-light);
+    transition: var(--transition);
+}
+
+.compare-row:hover {
+    background: #f0f5fa;
+}
+
+.compare-row:last-child {
+    border-bottom: none;
+}
+
+.compare-row > div {
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.compare-label {
+    font-weight: 600;
+    color: var(--primary-dark);
+    background: var(--bg-alt);
+    border-right: 2px solid var(--border-light);
+}
+
+.compare-label i {
+    margin-right: 0.5rem;
+    color: var(--accent);
+    width: 20px;
+    text-align: center;
+}
+
+.compare-trad {
+    border-right: 1px solid var(--border-light);
+}
+
+.tag-trad {
+    display: inline-block;
+    background: #fef9e7;
+    color: #7d6608;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    border: 1px solid #f9e79f;
+}
+
+.tag-tap {
+    display: inline-block;
+    background: #eaf2f8;
+    color: var(--primary);
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    border: 1px solid #aed6f1;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .compare-dimension,
+    .compare-row {
+        grid-template-columns: 1fr;
+    }
+
+    .compare-dimension > div:first-child {
+        display: none;
+    }
+
+    .compare-label {
+        border-right: none;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .compare-trad {
+        border-right: none;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .compare-trad::before {
+        content: 'Traditional: ';
+        font-weight: 600;
+        color: var(--text-light);
+    }
+
+    .compare-tap::before {
+        content: 'TAP-IAP: ';
+        font-weight: 600;
+        color: var(--primary);
+    }
+}
+
+/* ==============================
    Operationalization Table
    ============================== */
 
@@ -97,6 +225,73 @@
     background: #eafaf1;
     color: #27ae60;
     border: 1px solid #a9dfbf;
+}
+
+/* ==============================
+   Radar Chart
+   ============================== */
+
+.radar-section {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-light);
+    margin-bottom: 1.5rem;
+}
+
+.radar-section h4 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.25rem;
+}
+
+.radar-svg {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+}
+
+.radar-poly {
+    transition: all 0.4s ease;
+}
+
+.radar-poly:hover {
+    fill-opacity: 0.4;
+    stroke-width: 3;
+}
+
+.radar-dot {
+    transition: r 0.2s ease;
+    cursor: pointer;
+}
+
+.radar-dot:hover {
+    r: 8;
+}
+
+.radar-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    display: inline-block;
 }
 
 /* ==============================
